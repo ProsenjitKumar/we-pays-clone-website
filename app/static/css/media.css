@@ -1,0 +1,53 @@
+/* 
+*** All devices media querues css brunch website
+*/
+/*=============================================
+0px — 280px Mobile devices
+=============================================*/
+@media only screen and (max-width: 280px){
+
+
+}
+
+/*=============================================
+281px — 320px Mobile devices
+=============================================*/
+@media only screen and (max-width: 320px){
+
+
+}
+
+/*=============================================
+321px — 480px iPads, Tablets devices
+=============================================*/
+@media only screen and (max-width: 480px){
+
+
+}
+
+
+/*=============================================
+4811px — 767px: Small screens, laptops
+=============================================*/
+@media only screen and (max-width: 767px){
+
+	
+}
+
+
+/*=============================================
+768px — 991px: Desktops, large screens
+=============================================*/
+@media only screen and (max-width: 991px){
+
+}
+
+
+/*=============================================
+992px and more —  Extra large screens, TV
+=============================================*/
+@media only screen and (max-width: 1200px){
+	
+}
+
+

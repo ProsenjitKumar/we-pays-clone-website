@@ -1,0 +1,158 @@
+/* common css */
+ body{font-family: 'Roboto', sans-serif;}
+
+/*============================
+ Home Page
+============================*/
+ /* Header Area */
+.navbar{padding: 10px 0; background: #f0f5fb;}
+.navbar-brand{width: 150px; height: auto;}
+.navbar-brand img{width: 100%;}
+.nav-item{padding: 0 5px;}
+.navbar .nav-link{font-size: 16px; font-weight: 500; color: #4d5369; text-transform: uppercase; letter-spacing: .55px;}
+.navbar .nav-link:hover{color: #4ba3df;}
+.dropdown-menu{padding: 30px 30px;}
+.dropdown-menu[data-bs-popper] {top: 153%; left: -35px; border-radius: 0 0 8px 8px; border: none; box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;}
+.dropdown-item{font-size: 15px; font-weight: 400;}
+.dropdown-item:hover{color: #4ba3df; background: transparent;}
+.mega-title{font-size: 16px; font-weight: 600; color: #b2bac1; text-transform: uppercase; letter-spacing: .50px; padding-bottom: 20px; padding-left: 15px;}
+.mega-link{font-size: 20px; font-weight: 500;}
+.mega-subtitle{color: #4d5369; font-size: 14px; font-weight: 400; display: block; padding-bottom: 20px; padding-left: 15px;}
+.header-btn{font-size: 15px; font-weight: 600; color: #4d5369; text-transform: uppercase; letter-spacing: .55px; text-decoration: none; padding: 15px 20px; background: #ffffff; border-radius: 30px; box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;}
+.header-btn:hover{color: #4d5369;}
+
+/* Hero Area */
+.hero	{padding: 90px 0 50px 0; background: #f0f5fb;}
+.hero-contant p{font-size: 16px; font-weight: 400; color: #4d5369; background: #ffffff;padding: 7px 0 7px 7px; border-radius: 30px;}
+.hero-contant p a{font-size: 15px; text-transform: uppercase; padding: 5px 10px; background: #63c1b8; border-radius: 30px; text-decoration: none; color: #ffffff; letter-spacing: 1px;}
+.hero-contant p a:hover{color: #ffffff;}
+
+.hero-contant h1{font-size: 50px; line-height: 60px; color: #252935;
+ font-weight: 400; margin-bottom: 30px; text-transform: capitalize;}
+.hero-contant h4{font-size: 25px; line-height: 30px; color: #4d5369; font-weight: 400; margin-bottom: 50px; text-transform: capitalize;}
+.hero-contant a{text-decoration: none; font-size: 16px; text-transform: uppercase; color: #ffffff; font-weight: 500; letter-spacing: .55px; padding: 20px 30px; background: #000000; border: none; border-radius: 30px;}
+.hero-img{max-width: 600px;}
+.hero-img img{width: 100%;}
+
+
+/* intergade Area */
+.intergade{padding-top: 50px; margin-bottom: -120px; background: #f0f5fb;}
+.inter-contant{padding-right: 50px;}
+.inter-contant h5{font-size: 16px; color: #4d5369; text-transform: uppercase; margin-bottom: 20px;}
+.inter-contant h2{font-size: 40px; font-weight: 400; color: #000000; text-transform: capitalize; margin-bottom: 50px;}
+.inter-right .inter-fild{padding: 30px 40px; background: #ffffff; margin-bottom: 20px; border-left: 15px solid #4ba3df; border-radius: 15px; box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;}
+.inter-right .inter-fild h5{font-size: 22px; font-weight: 400; color: #4d5369; margin-bottom: 20px;}
+
+/* Developer Area */
+.developer{padding-top: 180px; background: #ffffff;}
+.dev-contant {padding-right: 50px;}
+.dev-contant h5{font-size: 16px; color: #4d5369; text-transform: uppercase; margin-bottom: 20px;}
+.dev-contant h2{font-size: 40px; font-weight: 400; color: #000000; text-transform: capitalize; margin-bottom: 20px;}
+.dev-contant h6{font-size: 18px; color: #4d5369; text-transform: uppercase; margin-bottom: 100px; font-weight: 400;}
+.dev-line {position: relative; background: #f4ed58; padding: 30px 20px; border-radius: 20px;}
+.dev-code{position: absolute; left: 7%; top: 0; height: 400px; width: 94%; background: #ffffff; padding: 70px 30px; border-radius: 20px; box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px; margin-top: -40px;}
+.dev-line li, .dev-code li{list-style: none; margin: 0; padding: 0; color: #ffffff;}
+.dev-code li{list-style: none; margin: 0; padding: 0; color: #4d5369;}
+.dev-right-contant h2{font-size: 40px; font-weight: 400; color: #000000; text-transform: capitalize;margin-bottom: 10px;}
+.dev-right-contant p{color: #4d5369; text-transform: capitalize; margin-bottom: 40px;}
+.dev-right-contant .dev-btn-1, .dev-right-contant .dev-btn{text-decoration: none; font-size: 16px; text-transform: uppercase; letter-spacing: .55px; font-weight: 600; color: #ffffff; padding: 18px 30px; background: #000000; border-radius: 30px;}
+.dev-right-contant .dev-btn-1 i{padding-left: 70px; color: #63c1b8;}
+.dev-right-contant .dev-btn i{padding-left: 70px; color: #4ba3df;}
+
+/* developer Focused Area*/
+.developer-focused{background: #f0f5fb; padding: 150px 0;}
+
+/* Solutions Area */
+.solutions{background: #f0f5fb; padding: 50px 0;}
+.solutions h1{margin-bottom: 50px; font-weight: 400; text-transform: capitalize; color: #00000;}
+.inner-saolution{background: #ffffff; border-radius: 30px; padding: 50px; box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;}
+.inner-saolution img{width: 40px; margin-bottom: 40px;}
+.inner-saolution h4{font-size: 30px; font-weight: 400; color: #00000; text-transform: capitalize; margin-bottom: 20px;}
+.inner-saolution p{color: #4d5369;font-size: 16px; font-weight: 400; text-transform: capitalize; margin-bottom: 0;}
+.inner-saolution p a{text-decoration: none; color: #4ba3df;}
+.inner-saolution p a:hover{color: #4ba3df;}
+
+/* Link Area */
+.link{background: #ffffff; padding: 100px 0; }
+.link-contant{padding: 0 80px;}
+.link-contant h1{font-size: 80px; font-weight: 400; color: #000000; margin-bottom: 30px;}
+.link-contant h2{font-size: 30px; font-weight: 400; color: #4d5369; margin-bottom: 50px;}
+.link-contant .link-btn{text-decoration: none; font-size: 16px; text-transform: uppercase; letter-spacing: .55px; font-weight: 600; color: #ffffff; padding: 18px 30px; background: #000000; border-radius: 30px;}
+
+/* Clear Area */
+.clear{background: #ffffff; padding: 100px 0; }
+.clear-contant{padding: 0 80px;}
+.clear-contant h1{font-size: 80px; font-weight: 400; color: #000000; margin-bottom: 30px;}
+.clear-contant h2{font-size: 30px; font-weight: 400; color: #4d5369; margin-bottom: 50px;}
+.clear-contant .clear-btn{text-decoration: none; font-size: 16px; text-transform: uppercase; letter-spacing: .55px; font-weight: 600; color: #ffffff; padding: 18px 30px; background: #000000; border-radius: 30px;}
+
+/* Core Area */
+.core{background: #ffffff; padding: 100px 0; }
+.core-contant{padding: 0 80px;}
+.core-contant h1{font-size: 80px; font-weight: 400; color: #000000; margin-bottom: 30px;}
+.core-contant h2{font-size: 30px; font-weight: 400; color: #4d5369; margin-bottom: 50px;}
+.core-contant .core-btn{text-decoration: none; font-size: 16px; text-transform: uppercase; letter-spacing: .55px; font-weight: 600; color: #ffffff; padding: 18px 30px; background: #000000; border-radius: 30px;}
+
+/* Brand Area */
+.brand{background: #f0f5fb; padding-top: 100px;}
+.brand h5{font-size: 16px; color: #4d5369; text-transform: uppercase; margin-bottom: 50px;}
+.brand-img{width: 220px; padding: 0 20px; margin-bottom: 50px;}
+.brand-img img{width: 100%; }
+
+/* Get Started Area */
+.get-started{background: #f0f5fb; padding: 100px 0;}
+.get-started h1{font-size: 80px; font-weight: 400; color: #000000; margin-bottom: 30px;}
+.get-started h6{font-size: 20px; font-weight: 400; color: #4d5369; margin-bottom: 50px;}
+.get-started .get-btn{text-decoration: none; font-size: 16px; text-transform: uppercase; letter-spacing: .55px; font-weight: 600; color: #ffffff; padding: 18px 30px; background: #000000; border-radius: 30px;}
+
+/* Footer Area */
+.footer	{padding: 100px 0 50px 0; background: #232232;}
+.footer h2	{font-size: 25px; font-weight: 500; color: #ffffff; margin-bottom: 20px; text-transform: capitalize;}
+.footer ul,  .social-area ul{margin: 0; padding: 0;}
+.footer ul li{list-style: none; padding-bottom: 5px;}
+.social-area ul li{display: inline-block; padding-right: 10px;}
+.footer ul li a{text-decoration: none; font-size: 15px; font-weight: 400; color: #dddddd; transition: 0.3s ease;}
+.social-area ul li a{text-decoration: none; font-size: 18px; font-weight: 500; color: #dddddd; transition: 0.3s ease;}
+.footer ul li a:hover{color: #ffffff;}
+.copyright-area{padding-top: 50px; text-align: center;}
+.copyright-area p{color: #dddddd; font-size: 14px; font-weight: 500;}
+
+/*============================
+ Card Page
+============================*/
+/* Card Area */
+.card-page{background: #517750;}
+.card-page select{width: 30%; background: #ffffff; outline: none; border: none; margin-bottom: 30px; color: #517750; font-size: 15px; font-weight: 600; }
+.card-page .form-group{margin: 100px 0; background: #ffffff; padding: 50px; box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px; border-radius: 20px;}
+.card-page label{ font-size: 15px; color: #5b5b5b;  font-weight: 600; text-transform: capitalize; margin-bottom: 5px;}
+.card-page input{ margin-bottom: 15px; border: none; outline: none; background: #f6f6f6; width: 100%; padding:10px 10px; font-size: 14px; color: #000000; font-weight: 500;}
+.card-page .check-box input{width: 5%; margin-top: 20px;}
+.card-page input::placeholder{ font-size: 14px; font-weight: 500; text-transform: capitalize; }
+.radio-btn input {width: 5%;}
+.card-page .contact_btn{font-size: 15px; font-weight: 600; text-transform: capitalize; color: #ffffff; padding: 10px 35px; background: #9c28b1; border: none; outline: none;margin: 20px 0; letter-spacing: 1px; transition: 0.3s ease;}
+.card-page .contact_btn:hover{color: #dddddd;}
+.card-img {margin-top: 20px;}
+.card-img img{width: 80px; height: auto;}
+
+/*============================
+ trams  Condition Page
+============================*/
+/* Trams & Conditions Area */
+.tams-condition{padding: 150px 0 50px 0;}
+.tams-condition h1{font-size: 36px; font-weight: 400; color: #212529;}
+.tams-condition p{font-size: 16px; font-weight: 400; color: #212529;}
+.tams-condition span{font-size: 16px; font-weight: 400; color: #212529; text-transform: capitalize; padding-bottom: 10px; display: block;}
+
+
+/*============================
+ Text Design
+============================*/
+/* Trams & Conditions Area */
+
+
+
+
+
+
+
+

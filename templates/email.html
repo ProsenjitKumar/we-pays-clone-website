@@ -1,0 +1,125 @@
+{% load static %}
+
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        crossorigin="anonymous">
+    <title>Newsletter Subscribtion Example</title>
+{#    <link rel="stylesheet" href="{% static 'assets/app.css' %}">#}
+
+    <style>
+        label {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.btn {
+    padding: 7px 21px;
+    background-color: rgb(143, 1, 1);
+    color: white;
+    font-size: 18px;
+}
+
+body {
+    background-color: azure;
+}
+    </style>
+
+</head>
+<body>
+    <div class="col-lg-6 col-md-6" style="margin: 100px auto; display: block;">
+        <form enctype="multipart/form-data" method="POST" action="" style="text-align: center;">
+            {% csrf_token %}
+            <div class="form-group">
+                <label>Subscribe to our Newsletter.</label>
+                <input type="email" class="form-control" id="userEmail" placeholder="Enter email" required>
+                <small style="font-weight: 600;color: red;" class="error"></small>
+                <input type="text" class="form-control mt-2" id="userName" placeholder="Enter name" required>
+                <small style="font-weight: 600;color: green;" class="success"></small>
+            </div>
+            <input type="submit" value="Subscribe" id="submit" class="btn">
+        </form>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="{% static 'assets/app.js' %}"></script>
+
+<script>
+    const validateEmail = function(email) {
+    var formData = new FormData();
+    formData.append('email', email)
+    $.ajaxSetup({
+        headers: {
+            "X-CSRFToken": document.querySelector('[name=csrfmiddlewaretoken]').value,
+        }
+    });
+    $.ajax({
+        url: '/validate/',
+        type: 'POST',
+        dataType: 'json',
+        cache: false,
+        processData: false,
+        contentType: false,
+        data: formData,
+        error: function (xhr) {
+            console.error(xhr.statusText);
+        },
+        success: function (res) {
+            $('.error').text(res.msg);
+        }
+    });
+};
+
+const subscribeUser = function(email, name) {
+    var formData = new FormData();
+    formData.append('email', email);
+    formData.append('name', name);
+    $.ajaxSetup({
+        headers: {
+            "X-CSRFToken": document.querySelector('[name=csrfmiddlewaretoken]').value,
+        }
+    });
+    $.ajax({
+        url: '/newsletter/',
+        type: 'POST',
+        dataType: 'json',
+        cache: false,
+        processData: false,
+        contentType: false,
+        data: formData,
+        error: function (xhr) {
+            console.error(xhr.statusText);
+        },
+        success: function (res) {
+            $('.success').text(res.msg);
+            $('#userEmail').val(' ');
+            $('#userName').val(' ');
+        }
+    });
+};
+
+(function ($) {
+    $('#submit').on('click', () => {
+        event.preventDefault();
+        const userEmail = $('#userEmail').val();
+        const userName = $('#userName').val();
+        if (userEmail && userName) {
+            subscribeUser(userEmail, userName);
+        }
+    });
+
+    $('#userEmail').on('change', (event) => {
+        event.preventDefault();
+        const email = event.target.value;
+        validateEmail(email);
+    });
+})(jQuery);
+</script>
+
+</body>
+</html>
+
